@@ -1,7 +1,7 @@
 module ActiveModel
   module Validations
     class CodiceFiscaleFormatValidator < ActiveModel::EachValidator
-      REGEX = Regexp.compile("^[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]$")
+      REGEX = Regexp.compile("^[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{2}[a-zA-Z0-9][A-Z]$")
 
       DISPARI = [1, 0, 5, 7, 9, 13, 15, 17, 19, 21, 1, 0, 5, 7, 9, 13, 15, 17, 19, 21, 2, 4, 18, 20, 11, 3, 6, 8, 12, 14, 16, 10, 22, 25, 24, 23]
 
